@@ -1,11 +1,11 @@
 module.exports = [
 
     {
-        description:		'Get something',
+        description:		'Get P1 meter data',
         method: 		'GET',
-        path:			'/',
+        path:			'192.168.2.14/',
         fn: function( callback, args ){
-            var result = Homey.app.getSomething();
+            var result = Homey.app.getP1MeterData();
 
             // callback follows ( err, result )
             callback( null, result );
@@ -13,40 +13,6 @@ module.exports = [
             // access /?foo=bar as args.query.foo
         }
     },
-
-    {
-        description:		'Add something new',
-        method: 		'POST',
-        path:			'/',
-        fn: function( callback, args ){
-            var result = Homey.app.addSomething( args.body );
-            callback( null, result );
-        }
-    },
-
-    {
-        description:		'Update something',
-        method: 		'PUT',
-        path:			'/:id',
-        fn: function( callback, args ){
-            var result = Homey.app.updateSomething( args.params.id, args.body );
-            callback( null, result );
-        }
-    },
-
-    {
-        description:		'Delete something',
-        method: 		'DELETE',
-        path:			'/:id',
-        fn: function( callback, args ){
-            var success = Homey.app.deleteSomething( args.params.id );
-
-            if( !result )
-                callback( success, null );
-            } else {
-                callback( null, success );
-            }
-        }
     }
 
 ]
