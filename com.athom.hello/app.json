@@ -1,5 +1,5 @@
 {
-    "id": "com.athom.executePi",
+    "id": "com.speedyco.executePiPi",
     "version": "0.0.1",
     "compatibility": ">=1.2.3",
     "name": {
@@ -12,4 +12,13 @@
     },
     "permissions": [],
     "speech": []
+},
+  "category": "energy",
+  "drivers": [
+    {
+      "id": "p1meter",
+      "name": {
+        "en": "P1meter",
+        "nl": "P1meter"
+      },
 }
