@@ -5,7 +5,7 @@ module.exports = [
         method: 		'GET',
         path:			'192.168.2.14/',
         fn: function( callback, args ){
-            var result = Homey.app.getP1MeterData();
+            var result = Homey.app.executePiP1();
 
             // callback follows ( err, result )
             callback( null, result );
