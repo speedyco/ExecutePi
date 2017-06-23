@@ -1,3 +1,8 @@
+Homey.manager('api').get('/manager/executePiP1/', function( err, result ){
+    console.log( err, result );
+});
+
+
 Homey.manager('insights').createLog( 'power_usage', {
     label: {
         en: 'Power Usage'
