@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <script type="text/javascript" src="/manager/webserver/assets/js/angular.js"></script>
+        
+        <style>
+            .splash {
+  display: none;
+}
+[ng-cloak].splash {
+  background-color: #428bca;
+  width: 100%;
+  text-align: center;
+  color: white;
+  display: block !important;
+}
+        </style>
+    </head>
+    <body>
+        <div ng-controller="FormController">
+      
+        <h1>Execute Pi P1 App</h1>
+        <div ng-cloack="" ng-hide="loaded">
+            <i class="fa fa-cog fa-spin fa-3x fa-fw margin-bottom"></i>
+        </div>
+        <article ng-show="loaded" class="ng-cloak">
+       
+        
+        Om goed gebruik te maken van de Execute Pi P1 app dien je hieronder aan te geven op welke host de API is gedefinieerd en waar je de informatie op wilt vragen.
+        
+      <form>
+        Host: (e.g. 192.168.1.2)<br>
+        <input type="text" name="host"><br>
+         API Name: (e.g.; 'Get Data')<br>
+        <input type="text" name="Api Name'">
+      </form>
+        
+       
+        <button ng-click="saveForm()">Save</button>
+        </article>
+        </div>
+        <script type="text/javascript">
+                
+                $scope.saveForm = function(){
+                    Homey.set('currentP1meterdataHost ',$scope.host);
+                    Homey.set('currentDataLoation ',$scope.api.name);
+                }
+            }]);
+            
+            
+            
+            
+            angular.bootstrap(document,['executePiP1Settings']);
+            
+        }
+        </script>
+    </body>
+</html>
