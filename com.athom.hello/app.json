@@ -1,1 +1,15 @@
-.
+{
+    "id": "com.athom.executePi",
+    "version": "0.0.1",
+    "compatibility": ">=1.2.3",
+    "name": {
+        "en": "Execute RaspPi P1",
+        "nl": "Voor RaspPi P1 uit"
+    },
+    "description": {
+        "en": "This an Homey app to collect P1 meter data from your Raspberry Pi.",
+        "nl": "Dit is een Homey app om P1 meter data te verzamelen van je Raspberry Pi"
+    },
+    "permissions": [],
+    "speech": []
+}
