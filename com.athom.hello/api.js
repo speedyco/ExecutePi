@@ -12,7 +12,6 @@ module.exports = [
 
             // access /?foo=bar as args.query.foo
         }
-    },
     }
 
 ]
